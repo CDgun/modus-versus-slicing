@@ -1,0 +1,35 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider-slides.scss - Non-cosmetic styles for slider
+ *
+ * coded by Corentin
+ * started at
+ */
+
+.slider-slides {
+    position: relative;
+    width: 300%;
+
+    &__elt {
+        float: left;
+        width: 33%;
+        background-color: $sliderBackgroundColor;
+        text-align: center;
+        &-title{
+            display: block;
+            margin: 0 auto;
+            width: 345px;
+            font-size: 3rem;
+            background-color: $linkColor;
+            color: $menuTextColor;
+        }
+        &-text{
+            background-color: $sliderDarkBackgroundColor;
+            border-radius: 0.5;
+            color: $menuTextColor;
+        }
+        &--is-active{
+
+        }
+    }
+}
