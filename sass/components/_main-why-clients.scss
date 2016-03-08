@@ -1,0 +1,21 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main, why section
+ *
+ * coded by Corentin
+ * started at
+ */
+
+.main-why-clients{
+    &-title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    &-nav{
+
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+    }
+}

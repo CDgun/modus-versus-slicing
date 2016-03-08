@@ -1,0 +1,18 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main , why section, header
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-why-header{
+    margin: 10rem 0 6rem;
+    text-align: center;
+    color: $otherTextColor;
+    &-title{
+        display: block;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        color: $linkColor;
+    }
+}

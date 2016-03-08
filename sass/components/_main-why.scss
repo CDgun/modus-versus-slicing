@@ -1,0 +1,38 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main, why section
+ *
+ * coded by Corentin
+ * started at
+ */
+
+ .main-why{
+     &-figure{
+         max-width: 570px;
+         height: auto;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+     &-cols{
+         display: inline-block;
+         &__elt{
+             float: left;
+             margin-right: 2rem; 
+             &-col{
+                 width: 270px;
+             }
+             &-title{
+                 font-size: 2rem;
+                 font-weight: bold;
+             }
+             &-quote{
+                 font-style: italic;
+                 &-author{
+                     font-style: normal;
+                     font-size: 1.5rem;
+                     font-weight: bold;
+                 }
+             }
+         }
+     }
+ }

@@ -14,13 +14,17 @@ $focusColor: #e8645a;
 $darkFocusColor: #e2534b;
 
 $mainBackgroundColor: #f3f3f3;
+$mainBlockColor: #ececec;
 $headerBackgroundColor: $lightMainColor;
 $sliderBackgroundColor: #7f8c8c;
 $sliderDarkBackgroundColor:#3f4646;
+$mainLinkBackgroundColor:white;
 
 $headingTextColor: #7f8c8c;
 $laborTextColor: #777777;
 $menuTextColor: white;
+$otherTextColor:$sliderBackgroundColor;
 
 $linkColor: #e1524b;
 $hoverLinkColor: darken( $linkColor, 25% );
+$linkBottomShadow: rgba(0, 0, 0, 0.2);

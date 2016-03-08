@@ -1,0 +1,73 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-services-group.scss - cosmetic styles for main
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-services-group{
+    display: flex;
+    width: $containerWidth;
+    margin: 2rem auto;
+    justify-content: space-between;
+    &-list{
+        display: inline;
+        text-align: center;
+        &__link{
+            position: relative;
+            display: inline-block;
+            background-color: $mainLinkBackgroundColor;
+            text-decoration: none;
+            text-align: center;
+            width: 20rem;
+            height: 26rem;
+            border-bottom:0.5rem solid $linkBottomShadow;
+            color: $otherTextColor;
+            &-icon{
+                font-size: 2rem;
+                margin: 1rem;
+                &::before{
+                    display: block;
+                    font-family: 'Glyphs';
+                    font-size: 5rem;
+                    margin: 3rem 0 1rem;
+                    color: $mainColor;
+                }
+                &-thumb::before{
+                    content: "\f087";
+                }
+                &-key::before{
+                    content: "\f084";
+                }
+                &-flag::before{
+                    content: "\f024";
+                }
+                &-flask::before{
+                    content: "\f0c3";
+                }
+            }
+            &-fake-button{
+                position: absolute;
+                display: block;
+                width: 12rem;
+                border-radius: 0.5rem;
+                bottom: -2rem;
+                left: 20%;
+                right: 25%;
+                font-size: 1rem;
+                padding: 1rem 2rem;
+                color: $menuTextColor;
+                background-color: $mainColor;
+                border-bottom:0.5rem solid $linkBottomShadow;
+            }
+            &:hover{
+                .main-services-group-list__link-icon::before{
+                    color: $focusColor;
+                }
+                .main-services-group-list__link-fake-button{
+                    background-color: $focusColor;
+                }
+            }
+        }
+    }
+}

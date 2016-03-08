@@ -1,0 +1,41 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-services.scss - cosmetic styles for main
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-services{
+    text-align: center;
+    &-focus{
+        position: relative;
+        background-color: $mainBlockColor;
+        width: $containerWidth;
+        margin: 0 auto;
+        padding: 3rem;
+        color:$otherTextColor;
+        text-align: left;
+        &-title{
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        &-callout{
+            position: absolute;
+            display: block;
+            text-align: center;
+            width: 20rem;
+            padding: 1.5rem 0;
+            text-decoration: none;
+            background-color: $linkColor;
+            right: 3rem;
+            top: 20%;
+            color: $menuTextColor;
+            font-size: 3rem;
+            border-radius: 0.5rem;
+            &:hover,&:focus{
+                background-color: $focusColor;
+            }
+        }
+    }
+}
