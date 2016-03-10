@@ -1,0 +1,67 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer-secondary.scss - cosmetic styles for footer
+ *
+ * coded by Corentin
+ * started at
+ */
+
+ .footer-secondary{
+     display: block;
+     position: absolute;
+     bottom: 0;
+     left:0;
+     clear: both;
+     width: 100%;
+     height:5rem;
+     background-color: $footerSecondaryColor;
+     padding: 2rem 0;
+     &-legals{
+         position: absolute;
+         display: block;
+         left: 12rem;
+         &__link{
+            color: $menuTextColor;
+         }
+     }
+     &-socials{
+         position: absolute;
+         right:12rem;
+         &__elt{
+             display: inline-block;
+             &-icon{
+                 font-size: 0;
+                 font-family: "Glyphs";
+                 margin-left: 2rem;
+                 &-facebook{
+                     &::before{
+                         content: "\f09a";
+                         color:$menuTextColor;
+                         font-size: 2rem;
+                     }
+                 }
+                 &-twitter{
+                     &::before{
+                         content: "\f099";
+                         color:$menuTextColor;
+                         font-size: 2rem;
+                     }
+                 }
+                 &-googleplus{
+                     &::before{
+                         content: "\f0d5";
+                         color:$menuTextColor;
+                         font-size: 2rem;
+                     }
+                 }
+                 &-rss{
+                     &::before{
+                         content: "\f09e";
+                         color:$menuTextColor;
+                         font-size: 2rem;
+                     }
+                 }
+             }
+         }
+     }
+ }

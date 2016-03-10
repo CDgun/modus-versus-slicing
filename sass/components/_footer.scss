@@ -8,6 +8,7 @@
  .footer {
      padding: 5rem 0 20rem ;
      background: $lightMainColor url( "#{ $imgPath }footer-primary-bcg-pattern.png" ) top left repeat-x;
+     position: relative;
      &-primary{
          width:$containerWidth;
          margin: 0 auto;

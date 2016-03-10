@@ -12,13 +12,14 @@
      &-figure{
          max-width: 570px;
          height: auto;
-         margin: 0 auto;
+         margin: 0 auto 5rem;
          overflow: hidden;
      }
      &-cols{
-         display: inline-block;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
          &__elt{
-             float: left;
              margin-right: 2rem;
              &-col{
                  width: 270px;
