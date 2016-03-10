@@ -1,0 +1,871 @@
+@charset "UTF-8";
+/* Modus Versus Slicing
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.hidden {
+  display: none; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html {
+  background: #f3f3f3;
+  font: normal 62.5%/1.25 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777777; }
+
+.hidden {
+  display: none; }
+
+a {
+  text-decoration: none; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_wrapper.scss - Non-cosmetic styles for wrapper
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.wrapper {
+  position: relative; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_header.scss - Non-cosmetic styles for header
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.header {
+  margin: 0 auto 2.5rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.scss - Non-cosmetic styles for topbar
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.topbar {
+  min-height: 8rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.logo.scss - Non-cosmetic styles for logo
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.logo {
+  position: relative;
+  width: 19.2rem;
+  margin: 0 auto;
+  left: -48.9rem; }
+  .logo__link {
+    height: 2.2rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.main-nav.scss - Non-cosmetic styles for main-nav
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.main-nav {
+  position: absolute;
+  width: 96rem;
+  top: 2.4rem;
+  right: 50%;
+  transform: translateX(58.5rem); }
+  .main-nav__list--is-dropdown {
+    position: absolute;
+    width: 20rem;
+    left: 0;
+    top: 4.5rem; }
+  .main-nav__elt--has-dropdown {
+    position: relative; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.main-nav.search-form.scss - Non-cosmetic styles for search-form
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.search-form {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .search-form__toggle {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0; }
+  .search-form__form-elt {
+    position: absolute;
+    display: none;
+    min-width: 20rem;
+    top: 5rem;
+    right: 0; }
+  .search-form--js-is-open .search-form__form-elt {
+    display: block; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.scss - Design styles for topbar
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.topbar {
+  padding: 2.8rem 0 0;
+  background: #76c7c0 url("../assets/img/navbar-bcg-pattern.png") bottom left repeat-x; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.logo.scss - Design styles for logo
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.logo__link {
+  display: block;
+  background: transparent url("../assets/img/logo.svg") center left no-repeat;
+  background-size: contain;
+  font-size: 0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.main-nav.scss - Design styles for main-nav
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.main-nav {
+  padding-right: 5.6rem;
+  text-align: right; }
+  .main-nav__list {
+    display: inline-block;
+    font-size: 0; }
+    .main-nav__list--is-dropdown {
+      display: none;
+      padding: .5rem;
+      background: #e2534b;
+      border-radius: .5rem; }
+      .main-nav__list--is-dropdown::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -1.2rem;
+        left: 1.2rem;
+        border: .6rem solid transparent;
+        border-bottom-color: #e2534b; }
+      .main-nav__list--is-dropdown::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -4.5rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1; }
+  .main-nav__elt {
+    display: inline-block; }
+    .main-nav__elt + .main-nav__elt {
+      margin-left: 1.4rem; }
+    .main-nav__elt--has-dropdown:hover > .main-nav__link {
+      background: #e8645a;
+      box-shadow: 0 0.3rem 0 #e2534b; }
+    .main-nav__elt--has-dropdown:hover .main-nav__list--is-dropdown {
+      display: block; }
+    .main-nav__elt--is-sub-elt {
+      display: block;
+      border-radius: .5rem;
+      background: #e8645a; }
+      .main-nav__elt--is-sub-elt + .main-nav__elt--is-sub-elt {
+        margin-left: 0;
+        margin-top: .5rem; }
+      .main-nav__elt--is-sub-elt::before {
+        content: none; }
+      .main-nav__elt--is-sub-elt:hover {
+        background: #76c7c0; }
+  .main-nav__link {
+    display: block;
+    padding: 1rem 1.4rem;
+    border-radius: .4rem;
+    font: 600 1.4rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase; }
+    .main-nav__link:hover {
+      background: #e8645a;
+      box-shadow: 0 0.3rem 0 #e2534b; }
+    .main-nav__link--is-active {
+      background: #62a29e;
+      box-shadow: 0 0.3rem 0 #528b86; }
+    .main-nav__link--is-dropdown-head::before {
+      content: "";
+      margin-right: .8rem;
+      font: normal 1.4rem "Glyphs"; }
+    .main-nav__link--is-sub-link {
+      padding: 1rem;
+      box-shadow: none;
+      font: 600 1.3rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: none;
+      text-align: left; }
+      .main-nav__link--is-sub-link::before {
+        content: "";
+        margin-right: .8rem;
+        font: normal 1.3rem "Glyphs"; }
+      .main-nav__link--is-sub-link:hover {
+        background: #76c7c0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.main-nav.search-form.scss - Non-cosmetic styles for search-form
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.search-form__toggle {
+  padding: .8rem 1.4rem .9rem;
+  border-radius: .4rem;
+  font-size: 0;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+  .search-form__toggle::before {
+    content: "";
+    font: normal 1.6rem/1 "Glyphs"; }
+  .search-form__toggle:hover {
+    background: #e8645a;
+    box-shadow: 0 0.3rem 0 #e2534b; }
+
+.search-form__form-elt {
+  padding: .5rem;
+  background: #e2534b;
+  border-radius: .4rem; }
+  .search-form__form-elt::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: -1.2rem;
+    right: 1.7rem;
+    border: .6rem solid transparent;
+    border-bottom-color: #e2534b; }
+
+.search-form__input {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  padding: .25rem .5rem;
+  background: white;
+  border-radius: .2rem;
+  border: 0;
+  font: normal 1.6rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777777; }
+  .search-form__input:focus {
+    outline: 0; }
+
+.search-form__button {
+  display: block;
+  width: 100%;
+  padding: .5rem .5rem;
+  background: #76c7c0;
+  border-radius: .2rem;
+  border: 0;
+  font: normal 1.6rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+  .search-form__button:hover {
+    background: #62a29e; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider.scss - Non-cosmetic styles for slider
+ *
+ * coded by Corentin
+ * started at
+ */
+.slider {
+  position: relative; }
+  .slider-slides {
+    margin-bottom: 1rem; }
+    .slider-slides__elt {
+      background-color: #7f8c8c;
+      text-align: center;
+      display: none;
+      min-height: 31.25rem;
+      vertical-align: middle;
+      padding-top: 11rem; }
+      .slider-slides__elt-title {
+        display: block;
+        margin: 0 auto 2rem;
+        padding: 0.5rem 0;
+        width: 22rem;
+        font-size: 3.2rem;
+        background-color: #e1524b;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 2px; }
+      .slider-slides__elt-text {
+        width: 30rem;
+        padding: 1rem;
+        background-color: #3f4646;
+        border-radius: 2px;
+        color: white; }
+      .slider-slides__elt--is-active {
+        display: block; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider-nav.scss - Non-cosmetic styles for slider-nav
+ *
+ * coded by Corentin
+ * started at
+ */
+.slider-nav-button__slide-previous {
+  font-size: 0; }
+  .slider-nav-button__slide-previous::after {
+    background-color: #e1524b;
+    font-family: 'Glyphs';
+    content: '\f100';
+    color: white;
+    padding: 1rem 2.5rem 1rem 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 11rem; }
+
+.slider-nav-button__slide-next {
+  font-size: 0; }
+  .slider-nav-button__slide-next::after {
+    background-color: #e1524b;
+    font-family: 'Glyphs';
+    content: '\f101';
+    color: white;
+    padding: 1rem 1.5rem 1rem 2.5rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    right: 0;
+    top: 11rem; }
+
+.slider-nav-dots {
+  text-align: center;
+  font-size: 0; }
+  .slider-nav-dots__elt {
+    background-color: #b0b8b9;
+    padding: 0.25rem 3rem;
+    margin: 0.5rem; }
+    .slider-nav-dots__elt--is-active {
+      background-color: #e1524b; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-services.scss - cosmetic styles for main
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-services {
+  text-align: center; }
+  .main-services-focus {
+    position: relative;
+    background-color: #ececec;
+    width: 117rem;
+    margin: 0 auto;
+    padding: 3rem;
+    color: #7f8c8c;
+    text-align: left; }
+    .main-services-focus-title {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem; }
+    .main-services-focus-callout {
+      position: absolute;
+      display: block;
+      text-align: center;
+      width: 20rem;
+      padding: 1.5rem 0;
+      text-decoration: none;
+      background-color: #e1524b;
+      right: 3rem;
+      top: 20%;
+      color: white;
+      font-size: 3rem;
+      border-radius: 0.5rem; }
+      .main-services-focus-callout:hover, .main-services-focus-callout:focus {
+        background-color: #e8645a; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-services-group.scss - cosmetic styles for main
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-services-group {
+  display: flex;
+  width: 117rem;
+  margin: 2rem auto;
+  justify-content: space-between; }
+  .main-services-group-list {
+    display: inline;
+    text-align: center; }
+    .main-services-group-list__link {
+      position: relative;
+      display: inline-block;
+      background-color: white;
+      text-decoration: none;
+      text-align: center;
+      width: 20rem;
+      height: 26rem;
+      border-bottom: 0.5rem solid rgba(0, 0, 0, 0.2);
+      color: #7f8c8c;
+      border-radius: 0.3rem; }
+      .main-services-group-list__link-icon {
+        font-size: 2rem;
+        margin: 1rem; }
+        .main-services-group-list__link-icon::before {
+          display: block;
+          font-family: 'Glyphs';
+          font-size: 5rem;
+          margin: 3rem 0 1rem;
+          color: #62a29e; }
+        .main-services-group-list__link-icon-thumb::before {
+          content: "\f087"; }
+        .main-services-group-list__link-icon-key::before {
+          content: "\f084"; }
+        .main-services-group-list__link-icon-flag::before {
+          content: "\f024"; }
+        .main-services-group-list__link-icon-flask::before {
+          content: "\f0c3"; }
+      .main-services-group-list__link-fake-button {
+        position: absolute;
+        display: block;
+        width: 12rem;
+        border-radius: 0.5rem;
+        bottom: -2rem;
+        left: 20%;
+        right: 25%;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        color: white;
+        background-color: #62a29e;
+        border-bottom: 0.5rem solid rgba(0, 0, 0, 0.2); }
+      .main-services-group-list__link:hover .main-services-group-list__link-icon::before {
+        color: #e8645a; }
+      .main-services-group-list__link:hover .main-services-group-list__link-fake-button {
+        background-color: #e8645a; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main , why section, header
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-why-header {
+  margin: 10rem 0 6rem;
+  text-align: center;
+  color: #7f8c8c; }
+  .main-why-header-title {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #e1524b; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main, why section
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-why {
+  width: 117rem;
+  margin: 0 auto; }
+  .main-why-figure {
+    max-width: 570px;
+    height: auto;
+    margin: 0 auto 5rem;
+    overflow: hidden; }
+  .main-why-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .main-why-cols__elt {
+      margin-right: 2rem; }
+      .main-why-cols__elt-col {
+        width: 270px; }
+      .main-why-cols__elt-title {
+        font-size: 2rem;
+        font-weight: bold; }
+      .main-why-cols__elt-quote {
+        font-style: italic; }
+        .main-why-cols__elt-quote-author {
+          font-style: normal;
+          font-size: 1.5rem;
+          font-weight: bold; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_main-why.scss - cosmetic styles for main, why section
+ *
+ * coded by Corentin
+ * started at
+ */
+.main-why-clients {
+  margin: 6rem 0; }
+  .main-why-clients-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem; }
+    .main-why-clients-title::after {
+      background: #7f8c8c url("../assets/img/why-bcg-pattern.png") center left repeat-x; }
+  .main-why-clients-nav {
+    position: relative; }
+    .main-why-clients-nav__client {
+      position: absolute;
+      right: 0;
+      top: -6.5rem;
+      font-size: 0;
+      font-family: 'Glyphs';
+      text-decoration: none;
+      width: 3rem; }
+      .main-why-clients-nav__client-previous::before {
+        position: absolute;
+        right: 5rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 3rem;
+        content: "\f104";
+        color: white;
+        background-color: #7f8c8c;
+        border-bottom: 0.3rem solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.5rem; }
+      .main-why-clients-nav__client-next::before {
+        position: absolute;
+        right: 0;
+        padding: 0.5rem 1.5rem;
+        font-size: 3rem;
+        content: "\f105";
+        color: white;
+        background-color: #7f8c8c;
+        border-bottom: 0.3rem solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.5rem; }
+  .main-why-clients__list {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer.scss - cosmetic styles for footer
+ *
+ * coded by Corentin
+ * started at
+ */
+.footer {
+  padding: 5rem 0 20rem;
+  background: #76c7c0 url("../assets/img/footer-primary-bcg-pattern.png") top left repeat-x;
+  position: relative; }
+  .footer-primary {
+    width: 117rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    color: white; }
+    .footer-primary-contact {
+      width: 30rem;
+      float: left;
+      margin-right: 5rem; }
+      .footer-primary-contact-title {
+        padding-bottom: 3rem; }
+        .footer-primary-contact-title__link-logo {
+          color: white;
+          font-size: 3rem;
+          font-weight: bold;
+          letter-spacing: -2px; }
+        .footer-primary-contact-title__link-text {
+          line-height: 2rem; }
+        .footer-primary-contact-title__link-contact {
+          margin: 1rem 0; }
+          .footer-primary-contact-title__link-contact-elt {
+            font-size: 2rem;
+            color: white;
+            font-style: italic; }
+    .footer-primary-sitemap {
+      float: left;
+      margin-right: 10rem; }
+      .footer-primary-sitemap-title {
+        font-size: 3rem;
+        color: #497e79;
+        font-weight: bold;
+        margin-bottom: 3rem; }
+      .footer-primary-sitemap__elt {
+        line-height: 2rem; }
+        .footer-primary-sitemap__elt-link {
+          color: white; }
+        .footer-primary-sitemap__elt ::before {
+          font-family: "Glyphs";
+          content: "\f105       ";
+          color: white; }
+    .footer-primary-community {
+      float: left;
+      margin-right: 10rem; }
+      .footer-primary-community-title {
+        font-size: 3rem;
+        color: #497e79;
+        font-weight: bold;
+        margin-bottom: 3rem; }
+      .footer-primary-community__elt {
+        line-height: 2rem; }
+        .footer-primary-community__elt-link {
+          color: white; }
+        .footer-primary-community__elt ::before {
+          font-family: "Glyphs";
+          content: "\f105       ";
+          color: white; }
+    .footer-primary-blog-articles {
+      margin-right: 10rem; }
+      .footer-primary-blog-articles-title {
+        font-size: 3rem;
+        color: white;
+        font-weight: thin;
+        margin-bottom: 3rem;
+        font-style: italic; }
+        .footer-primary-blog-articles-title__link {
+          font-style: normal;
+          color: white;
+          font-weight: bold; }
+      .footer-primary-blog-articles__elt {
+        color: white; }
+        .footer-primary-blog-articles__elt-img {
+          font-size: 0;
+          width: 70px;
+          height: 70px;
+          background-color: #497e79;
+          border-radius: 1rem; }
+        .footer-primary-blog-articles__elt-date {
+          display: block;
+          color: #497e79; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer-secondary.scss - cosmetic styles for footer
+ *
+ * coded by Corentin
+ * started at
+ */
+.footer-secondary {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clear: both;
+  width: 100%;
+  height: 5rem;
+  background-color: #6ab3ac;
+  padding: 2rem 0; }
+  .footer-secondary-legals {
+    position: absolute;
+    display: block;
+    left: 12rem; }
+    .footer-secondary-legals__link {
+      color: white; }
+  .footer-secondary-socials {
+    position: absolute;
+    right: 12rem; }
+    .footer-secondary-socials__elt {
+      display: inline-block; }
+      .footer-secondary-socials__elt-icon {
+        font-size: 0;
+        font-family: "Glyphs";
+        margin-left: 2rem; }
+        .footer-secondary-socials__elt-icon-facebook::before {
+          content: "\f09a";
+          color: white;
+          font-size: 2rem; }
+        .footer-secondary-socials__elt-icon-twitter::before {
+          content: "\f099";
+          color: white;
+          font-size: 2rem; }
+        .footer-secondary-socials__elt-icon-googleplus::before {
+          content: "\f0d5";
+          color: white;
+          font-size: 2rem; }
+        .footer-secondary-socials__elt-icon-rss::before {
+          content: "\f09e";
+          color: white;
+          font-size: 2rem; }
+
+/*# sourceMappingURL=styles.css.map */
