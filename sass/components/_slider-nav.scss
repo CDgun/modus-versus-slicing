@@ -1,0 +1,57 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider-nav.scss - Non-cosmetic styles for slider-nav
+ *
+ * coded by Corentin
+ * started at
+ */
+
+.slider-nav{
+    &-button{
+
+        &__slide-previous{
+            font-size: 0;
+            &::after{
+                background-color: $linkColor;
+                font-family: 'Glyphs';
+                content: '\f100';
+                color: $menuTextColor;
+                padding: 1rem 2.5rem 1rem 1.5rem;
+                border-radius:0 1rem 1rem 0;
+                text-align: center;
+                font-size: 4rem;
+                position: absolute;
+                left: 0;
+                top: 11rem;
+            }
+        }
+        &__slide-next{
+            font-size: 0;
+            &::after{
+                background-color: $linkColor;
+                font-family: 'Glyphs';
+                content: '\f101';
+                color: $menuTextColor;
+                padding: 1rem 1.5rem 1rem 2.5rem;
+                border-radius:1rem 0 0 1rem;
+                text-align: center;
+                font-size: 4rem;
+                position: absolute;
+                right: 0;
+                top: 11rem;
+            }
+        }
+    }
+    &-dots{
+        text-align: center;
+        font-size: 0;
+        &__elt{
+            background-color: $dotsLinkColor;
+            padding: 0.25rem 3rem;
+            margin: 0.5rem;
+            &--is-active{
+                background-color: $linkColor;
+            }
+        }
+    }
+}

@@ -8,12 +8,14 @@
 .slider{
     position: relative;
     &-slides{
+        margin-bottom: 1rem;
         &__elt {
             background-color: $sliderBackgroundColor;
             text-align: center;
             display: none;
             min-height: 31.25rem;
             vertical-align: middle;
+            padding-top: 11rem;
             &-title{
                 display: block;
                 margin: 0 auto 2rem;
@@ -40,11 +42,5 @@
             }
         }
     }
-    &-nav{
-        &-button{
-            position: absolute;
-            vertical-align: middle;
-            top: 50%;
-        }
-    }
+
 }
