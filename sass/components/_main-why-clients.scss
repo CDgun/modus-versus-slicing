@@ -7,16 +7,52 @@
  */
 
 .main-why-clients{
+    margin: 6rem 0;
     &-title{
         font-size: 2rem;
         font-weight: bold;
+        margin-bottom: 4rem;
+        &::after{
+            background:$sliderBackgroundColor url( "#{ $imgPath }why-bcg-pattern.png" ) center left repeat-x;
+        }// ne fonctionne pas, a chercher plus tard.
     }
     &-nav{
-
+        position: relative;
+        &__client{
+            position: absolute;
+            right: 0;
+            top: -6.5rem;
+            font-size: 0;
+            font-family: 'Glyphs';
+            text-decoration: none;
+            width: 3rem;
+            &-previous::before{
+                position: absolute;
+                right: 5rem;
+                padding: 0.5rem 1.5rem;
+                font-size: 3rem;
+                content:"\f104";
+                color: $menuTextColor;
+                background-color: $sliderBackgroundColor;
+                border-bottom: 0.3rem solid $linkBottomShadow;
+                border-radius: 0.5rem;
+            }
+            &-next::before{
+                position: absolute;
+                right: 0;
+                padding: 0.5rem 1.5rem;
+                font-size: 3rem;
+                content:"\f105";
+                color: $menuTextColor;
+                background-color: $sliderBackgroundColor;
+                border-bottom:0.3rem solid $linkBottomShadow;
+                border-radius: 0.5rem;
+            }//hover ne fonctionner pas. EDIT: hover supprimé.
+        }
     }
     &__list{
         display: flex;
         flex-direction: row;
-        overflow:hidden; 
+        overflow:hidden;
     }
 }

@@ -7,6 +7,8 @@
  */
 
  .main-why{
+     width: $containerWidth;
+     margin: 0 auto;
      &-figure{
          max-width: 570px;
          height: auto;
@@ -17,7 +19,7 @@
          display: inline-block;
          &__elt{
              float: left;
-             margin-right: 2rem; 
+             margin-right: 2rem;
              &-col{
                  width: 270px;
              }

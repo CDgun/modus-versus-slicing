@@ -1,0 +1,119 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer.scss - cosmetic styles for footer
+ *
+ * coded by Corentin
+ * started at
+ */
+ .footer {
+     padding: 5rem 0 20rem ;
+     background: $lightMainColor url( "#{ $imgPath }footer-primary-bcg-pattern.png" ) top left repeat-x;
+     &-primary{
+         width:$containerWidth;
+         margin: 0 auto;
+         padding-top: 2rem;
+         color: $menuTextColor;
+         &-contact{
+             width:30rem;
+             float: left;
+             margin-right: 5rem;
+             &-title{
+                 padding-bottom: 3rem;
+                 &__link{
+                     &-logo{
+                         color: $menuTextColor;
+                         font-size: 3rem;
+                         font-weight: bold;
+                         letter-spacing: -2px;
+                     }
+                     &-text{
+                         line-height: 2rem;
+                     }
+                     &-contact{
+                         margin: 1rem 0;
+                         &-title{
+
+                         }
+                         &-elt{
+                             font-size: 2rem;
+                             color: $menuTextColor;
+                             font-style: italic;
+                         }
+                     }
+                 }
+             }
+         }
+         &-sitemap{
+             float: left;
+             margin-right: 10rem;
+             &-title{
+                 font-size: 3rem;
+                 color: $footerTextColor;
+                 font-weight: bold;
+                 margin-bottom: 3rem;
+             }
+             &__elt{
+                 line-height: 2rem;
+                 &-link{
+                     color: $menuTextColor;
+                 }
+                 ::before{
+                     font-family: "Glyphs";
+                     content: "\f105       ";
+                     color: $menuTextColor;
+                 }
+             }
+
+         }
+         &-community{
+             float: left;
+             margin-right: 10rem;
+             &-title{
+                 font-size: 3rem;
+                 color: $footerTextColor;
+                 font-weight: bold;
+                 margin-bottom: 3rem;
+             }
+             &__elt{
+                 line-height: 2rem;
+                 &-link{
+                     color: $menuTextColor;
+                 }
+                 ::before{
+                     font-family: "Glyphs";
+                     content: "\f105       ";
+                     color: $menuTextColor;
+                 }
+             }
+         }
+         &-blog-articles{
+             margin-right: 10rem;
+             &-title{
+                 font-size: 3rem;
+                 color: $menuTextColor;
+                 font-weight: thin;
+                 margin-bottom: 3rem;
+                 font-style: italic;
+                 &__link{
+                     font-style: normal;
+                     color: $menuTextColor;
+                     font-weight: bold;
+                 }
+             }
+             &__elt{
+                 color: $menuTextColor;
+                 &-img{
+                     font-size: 0;
+                     width: 70px;
+                     height: 70px;
+                     background-color: $footerTextColor;
+                     border-radius: 1rem;
+                 }//problème ave l'url dans le html, ne veut pas afficher.
+                 &-date{
+                     display: block;
+                     color: $footerTextColor;
+                 }
+             }
+         }
+     }
+ }
